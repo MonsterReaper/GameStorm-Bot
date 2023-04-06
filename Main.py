@@ -25,7 +25,7 @@ async def info(ctx: interactions.CommandContext):
         embed.add_field(name="Number of members",value=str(n),inline=False)
         embed.description= "Basic information about the GameStorm server."
         embed.add_field(name="My GitHub", value="https://github.com/monsterreaper")
-    
+        embed.set_footer("Created by Shivesh")    
         await ctx.send(embeds=embed)
 
     except Exception as e:
