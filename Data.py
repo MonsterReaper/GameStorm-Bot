@@ -5,7 +5,7 @@ import string
 
 
 # Load the chat data from the Excel file
-df = pd.read_excel('merged_file.xlsx')
+df = pd.read_excel('message_history.xlsx')
 
 # Group the messages by the sender and count the number of messages per sender
 msg_count = df.groupby('Name')['Message'].count()
